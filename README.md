@@ -1,0 +1,35 @@
+# Simplified Math and Logic Operator Precedence for C++
+C++ expressions can include math and logical operators. To evaluate a C++ expression, follow this process:
+- Evaluate math expressions first, then logical expressions
+- We'll use these C++ math operators:
+  - parentheses: ()
+  - multiplication: *
+  - division: /
+  - modulus division: %
+  - addtion: +
+  - subtraction: -
+  - We won't worry about exponentiation and unary minus for now.
+- To evaluate a math expression, scan it left to right for the operator with the highest precedence.
+- Apply this operator and re-scan the simplified expression.
+- If all operators have the highest precedence, apply each operator going left to right.
+- Parentheses have the highest precedence, so evaluate sub-expressions inside parentheses first.
+- Next, evaluate multiplication and division going left to right.
+- Last, evaluate addition and subtraction going left to right.
+  - A simple example: (3 + 2) * 5 = 5 * 5 =  25
+  - See the .cpp file for more examples.
+- Logical expressions evaluate to either true or false.
+- A zero (0) value is false, all other values are true.
+- To evaluate a logical expression, scan it left to right for the operator with the highest precedence.
+- Apply this operator and re-scan the simplified expression.
+- We'll use these C++ logical operators:
+  - parentheses: ()
+  - negation, also called not: !
+  - logical and: &&
+  - logical or: ||
+- If all operators have the highest precedence, apply each operator going left to right.
+- Parentheses () have the highest precedence, so evaluate sub-expressions inside parentheses first.
+- Next, evaluate negation ! going left to right.
+- Next, evaluate logical and && going left to right.
+- Last, evaluate logical or || going left to right.
+  - A simple example: (1 || 0) && 0 = 1 && 0 = 0 
+  - See the .cpp file for more examples.
